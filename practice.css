@@ -1,0 +1,50 @@
+* {
+    margin:0px;
+    border:0px;
+    color:#000000;
+    text-decoration:none;
+    line-height: 30px;
+
+}
+#logo{
+    width:50px;
+    height:40px;
+    
+}
+#header {
+    display :flex;
+    justify-content:space-around;
+    align-items: center;
+     
+    
+}
+h1{
+    color:#003087;
+}
+h2{
+    color:#008080
+}
+h3{
+    color:#555555
+}
+.heading{
+    text-decoration:underline;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column ;
+    margin:0;
+}
+main{
+    flex:1;
+}
+
+#footer-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer p {
+    text-align: center;
+}

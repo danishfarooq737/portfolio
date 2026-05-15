@@ -1,0 +1,275 @@
+/* for Entire Website */
+*{
+    
+    margin-top: 0px;
+    border:0px;
+    text-decoration: none;
+    font:black;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 25px;
+
+}
+/* Nav Parent class use Flexbox */
+
+#nav_header{
+    max-width:100%;
+    display :flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap; /* For responsiveness*/
+    background-color: black;
+     color:white;
+     height:50px;
+}
+#nav_header a{
+    color:white;
+}
+/* MAke Main body container for footer setting */
+#container{
+     padding:0 10px 0 10px;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+main{
+    flex:1;
+}
+
+/* For input and textarea setting */
+input, textarea{
+    color:black;
+    border:1px solid #444;
+    border-radius: 10px;
+    
+    padding:0 30px;
+   
+}
+textarea{
+    height:40px;
+    width:300px;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+button{
+    border:1px solid #444;
+    border-radius: 10px;
+    width:70px;
+}
+/* About Page USe Flexbox */
+#about-container{
+    display:flex;
+    gap:20px;
+    
+}
+#aboutpic{
+    height:200px;
+    width:250px;
+}
+
+
+/* For Project page use grid layout */
+.project_container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    gap:20px;
+}
+
+/* Customizing Cards */
+.divproject_container{
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: black;
+    min-height: 200px;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Card Hover */
+.divproject_container:hover{
+    box-shadow:0 0 20px rgb(3, 138, 191);
+}
+
+.project-button{
+    width:100%;
+    font-weight: bolder;
+}
+
+.proj_image{
+    width:100%;
+    height:350px;
+    
+    
+
+   
+}
+
+/* set image in div in project page for cards */
+.pic1{
+    background-image: url(images.png);  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.pic2{
+ background-image: url(marlogo.png); 
+ background-size: cover;
+  background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+/* All buttons hover effect */
+button:hover{
+    background-color: aquamarine;
+
+
+}
+/* Skill Page */
+
+
+.customskill{
+    background-color: #444;
+    margin-top: 30px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.customskill h1{
+    text-align: center;
+}
+
+/* for increase margin for h1 */
+h1{
+    margin-top: 20px;
+}
+
+
+/* For Responsive in Tablet and Desktop */
+@media (max-width:1024px){
+    form{
+        display:flex;
+        flex-direction: column;
+        gap:15px;
+    }
+    textarea{
+        width:100px;
+    }
+
+}
+@media (max-width:767px){
+    form{
+        display:flex;
+        flex-direction: column;
+        gap:15px;
+    }
+    textarea{
+        width:100px;
+    }
+    .project_container{
+    
+    grid-template-columns:1fr;
+    
+    
+}
+}
+
+/* Use flexbox for footer */
+#nav_footer{
+    
+     display :flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    color:white;
+}
+#nav_footer a{
+    color:white;
+    margin:0 25px;
+}
+footer {
+     background-color: black;
+     color:white;
+     height:80px;
+}
+footer p{
+    text-align: center;
+}
+footer p a{
+    color:white;
+}
+
+.dark{
+    background-color:black;
+    color:white;
+}
+.light{
+    background-color:white;
+    color:black;
+}
+body.dark{
+    background-color:black;
+    color:white;
+
+}
+
+
+/* Theme button improvements */
+#theme-toggle {
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #444;
+    color: white;
+}
+
+#theme-toggle:hover {
+    background: aquamarine;
+    transform: scale(1.05);
+}
+
+/* Better theme overrides */
+body.dark {
+    background-color: #111 !important;
+    color: white !important;
+}
+
+body.light {
+    background-color: #f8f9fa !important;
+    color: #333 !important;
+}
+
+
+body.dark input,
+body.dark textarea {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+body.light input,
+body.light textarea {
+    background-color: white !important;
+    color: black !important;
+}
+
+#thankyou{
+    Height:100vh;
+    padding-top: 200px;
+    text-align: center;
+    
+    
+}
